@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função-numero-primo</title>
+</head>
+<body>
+    <script>
+        function verificarNumeroPrimo(num) {
+            for(var divide = 2; divide < num; divide++) {
+                if(num % divide == 0) {
+                    return "Não é um numero primo"
+                }
+            }
+
+            return "O numero é primo"
+        }
+    </script>
+</body>
+</html>

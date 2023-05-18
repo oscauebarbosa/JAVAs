@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz-identicas</title>
+</head>
+<body>
+    <script>
+        var matriz1 = [
+            [1,2,3]
+        ]
+
+        var matriz2 = [
+            [1,2,3],
+            [4,5,6]
+        ]
+
+        var igual = true
+
+        if(matriz1.length == matriz2.length) {
+            for(var linha = 0; linha < matriz1.length; linha++) {
+                if(matriz1[linha].length == matriz2[linha].length) {
+                    for(var coluna = 0; coluna < matriz1[linha].length; coluna++) {
+                        if(matriz1[linha][coluna] != matriz2[linha][coluna]) {
+                            igual = false
+                        }
+                    }
+                } else {
+                    igual = false
+                }
+            }
+        } else {
+            igual = false
+        }
+
+        console.log(igual)
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio-dias-de-ferias</title>
+</head>
+<body>
+    <script>
+        var iniciodasferias = Number(prompt("Digite o dia de início das suas férias (de 1 a 7): "))
+        var quantdiasdeferias = Number(prompt("Digite a quantidade de dias de férias que você terá: "))
+        var voltaaotrabalho = (iniciodasferias + quantdiasdeferias) % 7;
+
+        alert("Você voltará ao trabalho no dia " + voltaaotrabalho)
+
+    </script>
+</body>
+</html>

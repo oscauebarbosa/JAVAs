@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=scrisc, initial-scale=1.0">
+    <title>objeto.pessoa</title>
+</head>
+<body>
+    <script>
+        const pessoa = { 
+            dados:{
+                nome: "Takamassa Nomuro",
+                idade: 52,
+                profissao: "pedreiro"
+            },
+            
+            parafrasear () { 
+                return "Olá, meu nome é "+ this.dados.nome +", eu tenho "+ this.dados.idade +" anos e sou um "+ this.dados.profissao +"" 
+            },
+            
+            endereço: { 
+                rua: "Dosdoido",
+                cidade: "Birigui",
+                estado: "Sum Pólo"
+            },
+            
+            parafrasear2 () { 
+                return "Moro na rua "+ this.endereço.rua +", na cidade "+ this.endereço.cidade +" - "+ this.endereço.estado +"" 
+            },
+            
+            deletar () {
+                delete this.dados.profissao    
+            }
+        }
+
+    </script>
+</body>
+</html>
